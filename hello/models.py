@@ -28,8 +28,8 @@ class Food(models.Model):
     Fat = models.FloatField(default=0)
     Natrium = models.FloatField(default=0)
 
-    def __str__(self):
-        return self.FoodName
+    def __int__(self):
+        return self.Num
 
 
 class Bookmark(models.Model):
