@@ -19,7 +19,7 @@ class User(models.Model):
 class Food(models.Model):
     objects = models.Manager()
     Num = models.IntegerField(primary_key=True)
-    FoodName = models.TextField(max_length=50)
+    FoodName = models.TextField(max_length=100)
     Category = models.TextField(max_length=30)
     ServingSize = models.FloatField(default=0)
     Kcal = models.FloatField(default=0)
